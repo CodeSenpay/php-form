@@ -16,7 +16,6 @@ session_destroy();
     <title>Step 4</title>
 </head>
 <body>
-    <h2>Checkout Complete</h2>
-    <button onclick=<?php header("Location: first-page.php")?>>Go Back to form</button>
+
 </body>
 </html>
