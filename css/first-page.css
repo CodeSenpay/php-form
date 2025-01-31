@@ -1,16 +1,94 @@
-.content {
+/* Custom Container Style */
+
+.custom-container {
   width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffb917;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .first-page-form {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem;
+  width: 40%;
   margin: auto;
-  gap: 3px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #555;
+}
+
+input.form-control {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #007bff; /* Changed button color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Changed hover button color */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .custom-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .first-page-form {
+    width: 60%;
+    padding: 15px;
+  }
+
+  button[type="submit"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
 }

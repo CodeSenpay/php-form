@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['customer_id'])) {
-    header("Location: checkout_step1.php");
+    header("Location: first-page.php");
     exit();
 }
 session_destroy();
@@ -17,5 +17,6 @@ session_destroy();
 </head>
 <body>
     <h2>Checkout Complete</h2>
+    <button onclick=<?php header("Location: first-page.php")?>>Go Back to form</button>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* Custom Container Style */
-.custom-container {
+.container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -12,15 +12,13 @@
 h1 {
   font-size: 2rem;
   font-weight: 600;
-  text-align: center;
 }
 
 /* Form Styling */
-.first-page-form {
+.second-page-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 100%;
 }
 
 /* Form Group Style */
@@ -33,9 +31,10 @@ h1 {
   font-weight: bold;
 }
 
-/* Input and Textarea Style */
+/* Input, Textarea, and Select Field Styling */
 input.form-control,
-textarea.form-control {
+textarea.form-control,
+select.form-control {
   border-radius: 5px;
   border: 1px solid #ddd;
   padding: 0.75rem;
@@ -52,7 +51,7 @@ button[type="submit"] {
 
 /* Responsive Design */
 @media (max-width: 767px) {
-  .custom-container {
+  .container {
     padding: 15px;
   }
 
